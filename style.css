@@ -11,7 +11,7 @@ html {
 
 body {
     background: #05050d;
-    color: #fff;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
 
@@ -27,7 +27,7 @@ main {
 
 header {
     background: #4035c7;
-    height: 60px;
+    height: 70px;
 
     display: flex;
     justify-content: center;
@@ -42,11 +42,16 @@ header {
 
 .logo {
     position: absolute;
-    left: 40px;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    height: 45px;
+    height: 80px;
+    width: auto;
+    display: block;
 }
 
 /* MENU */
@@ -59,20 +64,20 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 19px;
-    font-weight: 400;
-    transition: .3s;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d6d3ff;
+    color: #d8d4ff;
 }
 
 /* SOBRE */
 
 .sobre {
-    padding-top: 70px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 
     display: flex;
     justify-content: space-between;
@@ -82,20 +87,20 @@ nav a:hover {
 
 .texto {
     flex: 1;
-    max-width: 620px;
+    max-width: 650px;
 }
 
 .texto h2 {
-    font-size: 38px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 35px;
 }
 
 .texto p {
-    font-size: 15px;
-    line-height: 30px;
-    color: #c4c4c4;
-    margin-bottom: 20px;
+    color: #d3d3d3;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 25px;
 }
 
 .destaque {
@@ -105,28 +110,35 @@ nav a:hover {
 
 /* FOTO */
 
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .foto img {
-    width: 300px;
-    height: 300px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
-    border-radius: 32px;
+    border-radius: 35px;
 }
 
 /* PROJETOS */
 
 #projetos {
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 #projetos h2 {
-    font-size: 38px;
-    font-weight: 500;
-    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .subtitulo {
-    color: #9c9c9c;
-    margin-bottom: 45px;
+    color: #a3a3a3;
+    margin-bottom: 50px;
+    font-size: 16px;
 }
 
 /* CARDS */
@@ -134,39 +146,38 @@ nav a:hover {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     flex-wrap: wrap;
 }
 
 .card {
-    width: 310px;
-    min-height: 370px;
+    width: 320px;
+    min-height: 420px;
 
     background: #121219;
-
     border-radius: 28px;
 
-    padding: 18px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
 
     box-shadow:
-        0 0 12px rgba(123, 115, 255, 0.15),
+        0 0 10px rgba(123, 115, 255, 0.20),
         0 0 25px rgba(123, 115, 255, 0.08);
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 }
 
-/* IMAGEM DO CARD */
+/* IMAGEM DOS PROJETOS */
 
 .card img {
     width: 100%;
-    height: 110px;
+    height: 120px;
     object-fit: cover;
     border-radius: 18px;
     margin-bottom: 20px;
@@ -183,9 +194,9 @@ nav a:hover {
 /* TEXTO */
 
 .card p {
-    color: #b9b9b9;
-    line-height: 24px;
+    color: #bdbdbd;
     font-size: 14px;
+    line-height: 24px;
 
     flex: 1;
 }
@@ -200,12 +211,14 @@ nav a:hover {
     color: white;
 
     padding: 12px;
-
     border-radius: 30px;
 
     margin-top: 25px;
 
-    transition: .3s;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
 }
 
 .btn-projeto:hover {
@@ -215,20 +228,19 @@ nav a:hover {
 /* CONTATO */
 
 #contato {
-    padding-bottom: 90px;
     text-align: center;
+    padding-bottom: 80px;
 }
 
 #contato h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 
 #contato a {
-    color: #b9b9b9;
     text-decoration: none;
-    font-size: 18px;
+    color: #d3d3d3;
+    font-size: 20px;
 }
 
 #contato a:hover {
@@ -237,26 +249,25 @@ nav a:hover {
 
 /* FOOTER */
 
-/* FOOTER */
-
 footer {
     background: #0d0d12;
-    padding: 45px 20px;
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 100px;
 }
+
+/* ÍCONES */
 
 .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .social-icons a {
     text-decoration: none;
-    color: #4b42d4;
+    color: #4035c7;
     font-size: 50px;
     transition: 0.3s;
 }
@@ -266,9 +277,11 @@ footer {
     transform: translateY(-5px);
 }
 
+/* TEXTO FOOTER */
+
 footer p {
     color: #d0d0d0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -287,10 +300,18 @@ footer p {
         position: static;
     }
 
+    .logo img {
+        height: 70px;
+    }
+
     nav {
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
     }
 
     .sobre {
@@ -299,12 +320,26 @@ footer p {
         gap: 50px;
     }
 
+    .texto h2 {
+        font-size: 42px;
+    }
+
+    .texto p {
+        font-size: 16px;
+        line-height: 34px;
+    }
+
     .foto img {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
     }
 
     .cards {
         justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
     }
 }
