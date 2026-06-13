@@ -1,0 +1,310 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #05050d;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+/* CONTAINER */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: #4035c7;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    left: 40px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #d6d3ff;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.texto {
+    flex: 1;
+    max-width: 620px;
+}
+
+.texto h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.texto p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #c4c4c4;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    color: #7b73ff;
+    font-weight: 600;
+}
+
+/* FOTO */
+
+.foto img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+/* PROJETOS */
+
+#projetos {
+    padding-bottom: 90px;
+}
+
+#projetos h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #9c9c9c;
+    margin-bottom: 45px;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 310px;
+    min-height: 370px;
+
+    background: #121219;
+
+    border-radius: 28px;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        0 0 12px rgba(123, 115, 255, 0.15),
+        0 0 25px rgba(123, 115, 255, 0.08);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEM DO CARD */
+
+.card img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+
+.card p {
+    color: #b9b9b9;
+    line-height: 24px;
+    font-size: 14px;
+
+    flex: 1;
+}
+
+/* BOTÃO */
+
+.btn-projeto {
+    text-decoration: none;
+    text-align: center;
+
+    background: #4035c7;
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 30px;
+
+    margin-top: 25px;
+
+    transition: .3s;
+}
+
+.btn-projeto:hover {
+    background: #5d53e7;
+}
+
+/* CONTATO */
+
+#contato {
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#contato a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contato a:hover {
+    color: #7b73ff;
+}
+
+/* FOOTER */
+
+/* FOOTER */
+
+footer {
+    background: #0d0d12;
+    padding: 45px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #4b42d4;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #7b73ff;
+    transform: translateY(-5px);
+}
+
+footer p {
+    color: #d0d0d0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sobre {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .foto img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}
