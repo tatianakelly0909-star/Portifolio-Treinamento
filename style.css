@@ -49,7 +49,7 @@ header {
 }
 
 .logo img {
-    height: 80px;
+    height: 75px;
     width: auto;
     display: block;
 }
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 .texto h2 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 600;
     margin-bottom: 35px;
 }
@@ -99,7 +99,7 @@ nav a:hover {
 .texto p {
     color: #d3d3d3;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 38px;
     margin-bottom: 25px;
 }
 
@@ -117,8 +117,8 @@ nav a:hover {
 }
 
 .foto img {
-    width: 360px;
-    height: 360px;
+    width: 340px;
+    height: 340px;
     object-fit: cover;
     border-radius: 35px;
 }
@@ -132,7 +132,7 @@ nav a:hover {
 #projetos h2 {
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .subtitulo {
@@ -152,19 +152,18 @@ nav a:hover {
 
 .card {
     width: 320px;
-    min-height: 420px;
+    min-height: 480px;
 
     background: #121219;
     border-radius: 28px;
-
     padding: 20px;
 
     display: flex;
     flex-direction: column;
 
     box-shadow:
-        0 0 10px rgba(123, 115, 255, 0.20),
-        0 0 25px rgba(123, 115, 255, 0.08);
+        0 0 12px rgba(123, 115, 255, 0.18),
+        0 0 30px rgba(123, 115, 255, 0.08);
 
     transition: 0.3s;
 }
@@ -186,37 +185,35 @@ nav a:hover {
 /* TÍTULO */
 
 .card h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* TEXTO */
 
 .card p {
-    color: #bdbdbd;
-    font-size: 14px;
-    line-height: 24px;
-
+    color: #c2c2c2;
+    font-size: 15px;
+    line-height: 30px;
     flex: 1;
 }
 
 /* BOTÃO */
 
 .btn-projeto {
+    background: #4035c7;
+    color: white;
     text-decoration: none;
     text-align: center;
 
-    background: #4035c7;
-    color: white;
-
-    padding: 12px;
+    padding: 14px;
     border-radius: 30px;
-
-    margin-top: 25px;
 
     font-size: 15px;
     font-weight: 500;
+
+    margin-top: auto;
 
     transition: 0.3s;
 }
@@ -266,9 +263,8 @@ footer {
 }
 
 .social-icons a {
-    text-decoration: none;
     color: #4035c7;
-    font-size: 50px;
+    font-size: 45px;
     transition: 0.3s;
 }
 
@@ -276,8 +272,6 @@ footer {
     color: #7b73ff;
     transform: translateY(-5px);
 }
-
-/* TEXTO FOOTER */
 
 footer p {
     color: #d0d0d0;
@@ -290,9 +284,9 @@ footer p {
 @media (max-width: 900px) {
 
     header {
+        flex-direction: column;
         height: auto;
         padding: 20px;
-        flex-direction: column;
         gap: 20px;
     }
 
@@ -301,11 +295,11 @@ footer p {
     }
 
     .logo img {
-        height: 70px;
+        height: 65px;
     }
 
     nav {
-        gap: 20px;
+        gap: 25px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -321,12 +315,12 @@ footer p {
     }
 
     .texto h2 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .texto p {
         font-size: 16px;
-        line-height: 34px;
+        line-height: 32px;
     }
 
     .foto img {
@@ -334,12 +328,17 @@ footer p {
         height: 280px;
     }
 
-    .cards {
-        justify-content: center;
-    }
-
     .card {
         width: 100%;
         max-width: 350px;
+        min-height: 500px;
+    }
+
+    .social-icons a {
+        font-size: 38px;
+    }
+
+    footer p {
+        font-size: 16px;
     }
 }
