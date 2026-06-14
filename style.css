@@ -201,10 +201,10 @@ nav a:hover {
 /* CARDS PROJETOS */
 .cards {
     display: flex;
-    gap: 35px;
+    gap: 30px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 20px 0;
+    padding: 20px 10px;
     scrollbar-width: none;
 }
 
@@ -215,40 +215,69 @@ nav a:hover {
 .card {
     width: 320px;
     min-width: 320px;
-    min-height: 500px;
+    min-height: 420px; /* diminuiu a altura */
     flex-shrink: 0;
     scroll-snap-align: start;
 
-    background: #121219;
+    background: #0f0f18;
     border-radius: 28px;
-    padding: 20px;
+    padding: 18px;
+
     display: flex;
     flex-direction: column;
+
     box-shadow:
-        0 0 15px rgba(123, 115, 255, 0.18),
-        0 0 35px rgba(123, 115, 255, 0.08);
-    transition: .3s;
+        0 0 12px rgba(123, 115, 255, 0.20),
+        0 0 30px rgba(123, 115, 255, 0.08);
+
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 18px;
+}
+
+/* TÍTULO */
+.card h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+/* DESCRIÇÃO */
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+    margin-bottom: 30px;
 }
 
 /* BOTÃO */
 .btn-projeto {
+    margin-top: auto;
     background: #4035c7;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 14px;
-    border-radius: 30px;
-    font-weight: 500;
-    margin-top: auto;
-    transition: .3s;
+    padding: 16px;
+    border-radius: 35px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .btn-projeto:hover {
     background: #5d53e7;
+    transform: translateY(-2px);
 }
 
 /* CONTATO */
@@ -355,8 +384,9 @@ footer p {
     }
 
     .card {
-        width: 100%;
-        max-width: 350px;
+        width: 300px;
+        min-width: 300px;
+        min-height: 400px;
     }
 
     .social-icons a {
@@ -366,8 +396,12 @@ footer p {
     footer p {
         font-size: 16px;
     }
+}
+
+    footer p {
+        font-size: 16px;
+    }
     .card {
     width: 100%;
     max-width: 350px;
-}
 }
