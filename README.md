@@ -1,2 +1,2 @@
 # Portifolio-Treinamento
-Este repositorio abordara um portifolio de Treinamento.
+Este repositorio abordara um Portifólio de Treinamento.
