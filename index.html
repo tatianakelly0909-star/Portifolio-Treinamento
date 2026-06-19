@@ -2,49 +2,87 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tatiana Kelly | Portfólio</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B77BNWV9M"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
         gtag('config', 'G-6B77BNWV9M');
     </script>
-</head>
 
+</head>
 
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
     <header>
 
         <div class="logo">
-            <img src="assets/logo.tatianakelly.png" alt="Tatiana Corporate Training">
+
+            <img src="assets/logo.tatianakelly.png"
+                alt="Logo Tatiana Kelly">
+
         </div>
 
-        <nav>
+        <!-- Menu Mobile -->
+
+        <input type="checkbox" id="menu-mobile">
+
+        <label for="menu-mobile" class="hamburguer">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </label>
+
+        <!-- Menu -->
+
+        <nav class="menu">
+
             <a href="#sobre">Home</a>
+
             <a href="#sobre">Sobre</a>
+
             <a href="#projetos">Projetos</a>
+
             <a href="#contato">Contato</a>
+
         </nav>
 
     </header>
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
 
     <main>
 
@@ -57,79 +95,154 @@
                 <h2>Sobre Mim</h2>
 
                 <p>
-                    Sou Tatiana Kelly, Analista de
-                    <span class="destaque">Treinamento & Desenvolvimento</span>,
-                    apaixonada por aprendizagem, desenvolvimento humano e inovação.
+
+                    Sou Tatiana Kelly,
+
+                    Analista de
+
+                    <span class="destaque">
+
+                        Treinamento & Desenvolvimento
+
+                    </span>,
+
+                    apaixonada por aprendizagem,
+                    desenvolvimento humano e inovação.
+
                 </p>
 
                 <p>
+
                     Tenho experiência na criação de materiais de treinamento,
-                    apresentações, trilhas de aprendizagem, acompanhamento operacional
-                    e gestão de ações de desenvolvimento, atuando desde o levantamento
-                    de necessidades até a implementação e avaliação dos resultados.
+                    apresentações, trilhas de aprendizagem,
+                    acompanhamento operacional e gestão de ações de
+                    desenvolvimento, atuando desde o levantamento de
+                    necessidades até a implementação e avaliação
+                    dos resultados.
+
                 </p>
 
                 <p>
+
                     Possuo experiência na
-                    <span class="destaque">análise de indicadores de treinamento</span>,
-                    acompanhando métricas de participação, conclusão, satisfação e
-                    desempenho para apoiar decisões e promover a melhoria contínua.
+
+                    <span class="destaque">
+
+                        análise de indicadores de treinamento
+
+                    </span>,
+
+                    acompanhando métricas de participação,
+                    conclusão, satisfação e desempenho,
+                    apoiando decisões e promovendo
+                    melhoria contínua.
+
                 </p>
 
                 <div class="info-cards">
 
-                    
-
                     <div class="info-card">
+
                         <i class="fa-solid fa-chalkboard-user"></i>
-                        <span>Criação de Materiais Didáticos</span>
+
+                        <span>
+
+                            Criação de Materiais Didáticos
+
+                        </span>
+
                     </div>
 
                     <div class="info-card">
+
                         <i class="fa-solid fa-comments"></i>
-                        <span>Feedbacks Estruturados</span>
+
+                        <span>
+
+                            Feedbacks Estruturados
+
+                        </span>
+
                     </div>
+
                     <div class="info-card">
+
                         <i class="fa-solid fa-graduation-cap"></i>
-                        <span>Trilhas de Aprendizagem</span>
+
+                        <span>
+
+                            Trilhas de Aprendizagem
+
+                        </span>
+
                     </div>
 
                     <div class="info-card">
+
                         <i class="fa-solid fa-chart-line"></i>
-                        <span>Análise de Indicadores</span>
+
+                        <span>
+
+                            Análise de Indicadores
+
+                        </span>
+
                     </div>
 
                     <div class="info-card">
+
                         <i class="fa-solid fa-chart-line"></i>
-                        <span>Levantamento de necessidades de Treinamento</span>
+
+                        <span>
+
+                            Levantamento de Necessidades
+                            de Treinamento
+
+                        </span>
+
                     </div>
 
                     <div class="info-card">
+
                         <i class="fa-solid fa-laptop"></i>
-                        <span>Técnicas de Andragogia</span>
+
+                        <span>
+
+                            Técnicas de Andragogia
+
+                        </span>
+
                     </div>
 
                     <div class="info-card">
+
                         <i class="fa-solid fa-laptop"></i>
-                        <span>Tecnologia Educacional</span>
-                        
-                        
 
-                        
+                        <span>
 
-                        
+                            Tecnologia Educacional
+
+                        </span>
+
                     </div>
+
                 </div>
 
             </div>
 
             <div class="foto">
-                <img src="assets/Foto.TatianaKelly.jpeg" alt="Foto de Tatiana Kelly">
+
+                <img src="assets/Foto.TatianaKelly.jpeg"
+                    alt="Foto de Tatiana Kelly">
+
             </div>
 
-
         </section>
-        <!-- PROJETOS -->
+
+                <!-- =========================
+             PROJETOS
+        ========================== -->
+
         <section id="projetos">
 
             <h2>Projetos em Destaque</h2>
@@ -139,52 +252,74 @@
             </p>
 
             <!-- Indicador para celular -->
+
             <div class="indicador-scroll">
+
                 <span>Deslize para ver mais</span>
+
                 <i class="fa-solid fa-chevron-right"></i>
+
             </div>
 
             <div class="cards">
 
-                <!-- PROJETO 1 -->
-                <div class="card">
+                <!-- Projeto 1 -->
 
-                    <img src="assets/ATENDIMENTO HUMANIZADO (1).jpg" alt="Atendimento Humanizado">
+                <article class="card">
+
+                    <img src="assets/ATENDIMENTO HUMANIZADO (1).jpg"
+                        alt="Atendimento Humanizado">
 
                     <h3>Atendimento Humanizado</h3>
 
                     <p>
+
                         Material desenvolvido para treinamento de atendimento
-                        humanizado com foco em comunicação, empatia e experiência
-                        do cliente.
+                        humanizado com foco em comunicação,
+                        empatia e experiência do cliente.
+
                     </p>
 
-                    <a href="https://canva.link/a3e18mlmd6z3bfi" target="_blank" class="btn-projeto">
+                    <a href="https://canva.link/a3e18mlmd6z3bfi"
+                        target="_blank"
+                        class="btn-projeto">
+
                         Ver Projeto
+
                     </a>
 
-                </div>
+                </article>
 
-                <!-- PROJETO 2 -->
-                <div class="card">
+                <!-- Projeto 2 -->
 
-                    <img src="assets/TreinamentodeNegociação.pptx (2).pdf.jpg" alt="Negociação">
+                <article class="card">
+
+                    <img src="assets/TreinamentodeNegociação.pptx (2).pdf.jpg"
+                        alt="Técnicas de Negociação">
 
                     <h3>Técnicas de Negociação</h3>
 
                     <p>
-                        Material de treinamento focado em negociação,
-                        comunicação assertiva e construção de acordos eficazes.
+
+                        Material voltado para negociação,
+                        comunicação assertiva e construção
+                        de acordos eficazes.
+
                     </p>
 
-                    <a href="https://canva.link/wtuhgxc2lhbiusa" target="_blank" class="btn-projeto">
+                    <a href="https://canva.link/wtuhgxc2lhbiusa"
+                        target="_blank"
+                        class="btn-projeto">
+
                         Ver Projeto
+
                     </a>
 
-                </div>
+                </article>
 
-                <!-- PROJETO 3 -->
-                <div class="card">
+                <!-- Projeto 3 -->
+
+                <article class="card">
 
                     <img src="assets/Metodo-Disney-Aplicado-a-Compra-de-Cotas-de-Consorcio.pptx (2).pptx.jpg"
                         alt="Método Disney">
@@ -192,80 +327,107 @@
                     <h3>Método Disney</h3>
 
                     <p>
-                        Material desenvolvido com base na metodologia Disney,
-                        focada na criação de experiências de aprendizagem
+
+                        Material desenvolvido utilizando a
+                        metodologia Disney para criar
+                        experiências de aprendizagem
                         envolventes e memoráveis.
+
                     </p>
 
-                    <a href="https://canva.link/v1rkyd6b6wjj4au" target="_blank" class="btn-projeto">
+                    <a href="https://canva.link/v1rkyd6b6wjj4au"
+                        target="_blank"
+                        class="btn-projeto">
+
                         Ver Projeto
+
                     </a>
 
-                </div>
+                </article>
 
-                <!-- PROJETO 4 -->
-                <div class="card">
+                <!-- Projeto 4 -->
 
-                    <img src="assets/inteligencia.emocional-png.png" alt="Inteligência Emocional">
+                <article class="card">
+
+                    <img src="assets/inteligencia.emocional-png.png"
+                        alt="Inteligência Emocional">
 
                     <h3>Inteligência Emocional</h3>
 
                     <p>
-                        Pílula de conhecimento sobre inteligência emocional,
-                        com foco no reconhecimento e na gestão das emoções
-                        no ambiente profissional.
+
+                        Pílula de conhecimento sobre
+                        inteligência emocional, focando
+                        no reconhecimento e na gestão
+                        das emoções no ambiente profissional.
+
                     </p>
 
-                    <a href="https://canva.link/msvy0ulbualpgpk" target="_blank" class="btn-projeto">
+                    <a href="https://canva.link/msvy0ulbualpgpk"
+                        target="_blank"
+                        class="btn-projeto">
+
                         Ver Projeto
+
                     </a>
 
-                </div>
+                </article>
 
             </div>
 
         </section>
 
+                <!-- =========================
+             CONTATO
+        ========================== -->
 
-
-        </div>
-
-        </section>
-
-        <!-- CONTATO -->
         <section id="contato">
 
             <h2>Entre em Contato</h2>
 
             <p>
+
                 📧
+
                 <a href="mailto:tatianakelly1818@gmail.com">
+
                     tatianakelly1818@gmail.com
+
                 </a>
+
             </p>
 
         </section>
 
     </main>
 
-    <!-- RODAPÉ -->
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
     <footer>
 
         <div class="social-icons">
 
-            <a href="https://www.linkedin.com/in/tatiana-kelly-27a93b213" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/tatiana-kelly-27a93b213"
+                target="_blank"
+                aria-label="LinkedIn">
 
                 <i class="fa-brands fa-linkedin"></i>
 
             </a>
 
-            <a href="https://github.com/tatianakelly0909-star" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/tatianakelly0909-star"
+                target="_blank"
+                aria-label="GitHub">
 
                 <i class="fa-brands fa-github"></i>
 
             </a>
 
-            <a href="https://wa.me/5511967747392" target="_blank" aria-label="WhatsApp">
+            <a href="https://wa.me/5511967747392"
+                target="_blank"
+                aria-label="WhatsApp">
 
                 <i class="fa-brands fa-whatsapp"></i>
 
@@ -274,7 +436,9 @@
         </div>
 
         <p>
+
             © 2026 Tatiana Kelly | Todos os Direitos Reservados
+
         </p>
 
     </footer>
